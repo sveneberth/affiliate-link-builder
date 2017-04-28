@@ -1,0 +1,22 @@
+{
+	"name": "viur-ignite",
+	"version": "1.0.0",
+	"description": "VIUR Ignite basic project",
+	"main": "",
+	"scripts": {
+		"install": "npm install gulp -g && npm install",
+		"setup": "npm run install && gulp init",
+		"test": "npm run setup"
+	},
+	"repository": {},
+	"keywords": [],
+	"author": "VIUR",
+	"license": "GPL-3.0",
+	"bugs": {},
+	"homepage": "",
+	"dependencies": {
+		"gulp": "latest",
+		"viur-ignite-css": "latest",
+		"viur-ignite-icons": "latest"
+	}
+}

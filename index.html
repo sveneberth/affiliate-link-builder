@@ -6,39 +6,37 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta name="msapplication-TileColor" content="#ffffff">
 
-	<title>Amazon Affiliate Link Builder</title>
+	<title>Amazon Link Shortener</title>
 
 	<!-- description -->
-	<meta name="application-name" content="Amazon Affiliate Link Builder">
-	<meta name="apple-mobile-web-app-title" content="Amazon Affiliate Link Builder">
+	<meta name="application-name" content="Amazon Link Shortener">
+	<meta name="apple-mobile-web-app-title" content="Amazon Link Shortener">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
 	<!-- css -->
 	<link rel="stylesheet" href="./static/css/style.min.css">
-
 </head>
 <body>
 	<div class="wrap">
 		<div class="bind flex">
 			<div class="content">
 				<section class="section">
-					<h1 class="headline">Amazon Affiliate Link Builder</h1>
-					<h2 class="subline">Generiere einen Affiliate Link von
-						GSG ABI 2018</h2>
+					<h1 class="headline">Amazon Link Shortener</h1>
+					<h2 class="subline">Remove unnecessary attributes from amazon URLs.</h2>
 
-					<p>Gib hier die URL von dem Produkt ein welches du
-						bestellen möchtest. Klicke anschließend auf
-						&quot;Generiere Affiliate Link&quot;</p>
-					<textarea class="textarea textarea-vBlock"
-						placeholder="Amazon Produkt URL" id="inputURL"></textarea>
-					<button class="btn btn-vPrimary" type="button"
-						id="generateAffiliate">Generiere Affiliate Link</button>
+					<textarea class="textarea textarea-vBlock" placeholder="Amazon URL" id="inputURL"></textarea>
+					<div class="inputGroup">
+						<label class="label" for="smile">Smile Link</label>
+						<div class="switch">
+							<input class="switch-input" id="smile" type="checkbox">
+							<label class="switch-label" for="smile"></label>
+						</div>
+					</div>
+					<button class="btn btn-vPrimary" type="button" id="shortenURL">Shorten</button>
 				</section>
 
-				<section class="section outputSection" hidden>
-
-				</section>
+				<section class="section outputSection" hidden></section>
 			</div>
 		</div>
 	</div>
